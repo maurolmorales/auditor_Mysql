@@ -1,0 +1,23 @@
+****************************** Instalación de la base de datos Auditor ****************************** 
+
+Para instalar la base de datos Auditor, siga los siguientes pasos:
+
+***************************************************************************************************** 
+
+1 - Abra su software gestor de bases de datos y navegue hasta la carpeta "3 Archivos SQL".
+
+2 - Abra el archivo "1-creacion-tablas.sql", seleccione todo el contenido y ejecute el script.
+
+3 - Abra el archivo "2-insercion_datos_general.sql", seleccione todo el contenido y ejecute el script. Una vez ejecutado, se abrirá una consulta para facilitar el ingreso de datos, como se detalla en el siguiente punto.
+
+4 - En la consulta abierta, haga clic en el botón "Export/Import". Seleccione el archivo "1_insercion_datos_legajos.csv" ubicado en la carpeta "archivos csv". Haga clic en 'Siguiente'. En la siguiente ventana, seleccione "Utilizar tabla existente" y elija 'auditor.legajos'. Siga haciendo clic en 'Siguiente' hasta que se complete la importación.
+
+5 - Repita el paso anterior para importar los archivos "2_insercion_datos_observados.csv" en la tabla "auditor.observados" y "3_insercion_datos_comentarios.csv" en la tabla "auditor.comentarios".
+
+6 - Abra el archivo "3_creacion_vistas.sql", seleccione todo el contenido y ejecute el script.
+
+7 - Abra el archivo "4_creacion_funciones.sql", seleccione todo el contenido y ejecute el script.
+
+8 - Abra el archivo "5_creacion_stored_procedures.sql", seleccione todo el contenido y ejecute el script.
+
+9 - Abra el archivo "6_creacion_triggers.sql", seleccione todo el contenido y ejecute el script.
