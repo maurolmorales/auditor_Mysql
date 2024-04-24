@@ -18,4 +18,4 @@ tección y análisis de patrones de comportamiento. Se prioriza la verificación
 - 9 Triggers de insert, update y delete.
 
 ## DER: 
-![Diagrama Entidad Relación de la Base de datos]('1\-\Documentación/der.png')
+![Diagrama Entidad Relación de la Base de datos](1%20-%20Documentación/der.png)
