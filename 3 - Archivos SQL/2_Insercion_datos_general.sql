@@ -1,4 +1,4 @@
-use auditor;
+USE auditor;
 
 INSERT INTO empresas (id_empresa, nom_empresa) VALUES (1 , 'Electro Home');
 INSERT INTO empresas (id_empresa, nom_empresa) VALUES (2 , 'Computech');
@@ -40,7 +40,7 @@ INSERT INTO regionales( id_regional, nombre, apellido, email, telefono) VALUES
 (7, 'Laura', 'Fernández','laura.fernandez@corporativo.com','555-333-5678'),
 (8, 'Germán', 'Varela','german.varela@corporativo.com','555-393-5070');
 
-insert into sucursales (id_sucursal, num_sucursal, nom_sucursal, id_localidad, categoria, email, telefono, latitud, longitud, id_regional, id_empresa) values 
+INSERT INTO sucursales (id_sucursal, num_sucursal, nom_sucursal, id_localidad, categoria, email, telefono, latitud, longitud, id_regional, id_empresa) VALUES 
 (59, 119, 'Jujuy', 10, 'D', 'jujuy@electrohome.com', '555-890-1234', -24.182306181317117, -65.31455621118647, 2, 1), 
 (187, 62, 'Salta Peatonal', 17, 'C', 'saltapeatonal@computech.com', '555-543-6789', -24.774315638646907, -65.41543212800063, 2, 2), 
 (26, 40, 'Salta', 17, 'D', 'salta@electrohome.com', '555-888-7777', -24.783034637521904, -65.41084963169439, 2, 1), 
@@ -240,7 +240,7 @@ insert into sucursales (id_sucursal, num_sucursal, nom_sucursal, id_localidad, c
 (85, 164, 'Ushuaia', 23, 'B', 'ushuaia@electrohome.com', '555-234-8901', -54.80961056514971, -68.32218991798115, 3, 1), 
 (94, 181, 'Ushuaia Paseo del Fuego', 23, 'A', 'ushuaiapaseodelfuego@electrohome.com', '555-654-5678', -54.81256392660968, -68.32297455083388,3, 1);
 
-insert into REFERENCIA (cod_referencia, ref_referencia) values
+INSERT INTO REFERENCIA (cod_referencia, ref_referencia) VALUES
 (1,'Estado Legajo'),
 (2,'DNI'),
 (3,'Recibo'),
@@ -253,7 +253,7 @@ insert into REFERENCIA (cod_referencia, ref_referencia) values
 (10,'Validación'),
 (11,'Pagarés');
 
-insert into CODIGOS (cod_obs, ref_codigo, cod_referencia) values
+INSERT INTO CODIGOS (cod_obs, ref_codigo, cod_referencia) VALUES
 (0,'Situación de Legajo',1),
 (1,'Legajo o Pagaré en estado 1',1),
 (2,'Condiciones Grls. sin firmar',5),
@@ -339,7 +339,7 @@ insert into CODIGOS (cod_obs, ref_codigo, cod_referencia) values
 (123,'Falta Remito',11),
 (124,'Problemas con la Firma',11);
 
-insert into ESTADOS (cod_estado, ref_estado) values
+INSERT INTO ESTADOS (cod_estado, ref_estado) VALUES
 (1,'Generación'),
 (5,'Sellado en Sucursal'),
 (10,'Envío a Central'),
@@ -360,8 +360,4 @@ insert into ESTADOS (cod_estado, ref_estado) values
 (111,'Legajo fuera de Sistema'),
 (125,'Solucion Pendiente');
 
-SELECT * FROM legajos;
-
-
-
-
+/* SELECT * FROM legajos; */

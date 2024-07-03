@@ -32,21 +32,21 @@ CREATE TABLE REFERENCIA (
 
 CREATE TABLE CODIGOS (
   cod_obs  INT UNSIGNED NOT NULL,
-  cod_referencia  INT UNSIGNED NOT NULL, /* --- FK --- */
+  cod_referencia  INT UNSIGNED NOT NULL, 
   ref_codigo  VARCHAR(45) NOT NULL,   
   CONSTRAINT PK_CODIGOS PRIMARY KEY (cod_obs)
 );
 
 CREATE TABLE OBSERVADOS(
   id_observado  INT UNSIGNED NOT NULL auto_increment,
-  num_cuenta  INT UNSIGNED NOT NULL, /* --- FK --- */
-  cod_obs  INT UNSIGNED NOT NULL, /* --- FK --- */
+  num_cuenta  INT UNSIGNED NOT NULL, 
+  cod_obs  INT UNSIGNED NOT NULL, 
   CONSTRAINT PK_OBSERVADOS PRIMARY KEY (id_observado)
 );
 
 CREATE TABLE COMENTARIOS(
   id_comentario  INT UNSIGNED NOT NULL auto_increment,
-  num_cuenta  INT UNSIGNED NOT NULL, /* --- FK --- */
+  num_cuenta  INT UNSIGNED NOT NULL, 
   comentario  VARCHAR(250) NOT NULL, 
   fecha_coment  DATE NOT NULL,
   CONSTRAINT PK_COMENTARIOS PRIMARY KEY (id_comentario)
@@ -61,9 +61,9 @@ CREATE TABLE ESTADOS (
 CREATE TABLE SUCURSALES (
   id_sucursal  INT UNSIGNED NOT NULL auto_increment,
   num_sucursal  INT UNSIGNED NOT NULL,
-  id_localidad  INT UNSIGNED NOT NULL, /* --- FK --- */  
-  id_empresa  INT UNSIGNED NOT NULL, /* --- FK --- */
-  id_regional  INT UNSIGNED NOT NULL,  /* --- FK --- */
+  id_localidad  INT UNSIGNED NOT NULL,   
+  id_empresa  INT UNSIGNED NOT NULL, 
+  id_regional  INT UNSIGNED NOT NULL,  
   latitud DECIMAL(20,15) NOT NULL,
   longitud DECIMAL(20,15) NOT NULL,
   nom_sucursal  VARCHAR(30) NOT NULL, 
@@ -75,10 +75,10 @@ CREATE TABLE SUCURSALES (
 
 CREATE TABLE LEGAJOS (  
   num_cuenta  INT UNSIGNED NOT NULL,  
-  id_empresa  INT UNSIGNED NOT NULL, /* --- FK --- */
-  num_sucursal  INT UNSIGNED NOT NULL, /* --- FK --- */
-  id_sucursal INT UNSIGNED NOT NULL, /* --- FK --- */
-  cod_estado  INT UNSIGNED NOT NULL, /* --- FK --- */
+  id_empresa  INT UNSIGNED NOT NULL, 
+  num_sucursal  INT UNSIGNED NOT NULL, 
+  id_sucursal INT UNSIGNED NOT NULL, 
+  cod_estado  INT UNSIGNED NOT NULL, 
   fecha_otorg  DATE NOT NULL, 
   fecha_obs  DATE NOT NULL, 
   CONSTRAINT PK_LEGAJOS PRIMARY KEY (num_cuenta)

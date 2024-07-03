@@ -1,4 +1,4 @@
-use auditor;
+USE auditor;
 
 CREATE OR REPLACE VIEW vw_detalle_sucursales AS (
 	SELECT  e.nom_empresa AS Empresa, s.num_sucursal AS NumSuc, s.nom_sucursal AS NomSuc, s.telefono AS telefonoSuc,
@@ -62,4 +62,5 @@ CREATE OR REPLACE VIEW vw_panorama AS (
     GROUP BY  em.id_empresa, em.nom_empresa, s.id_sucursal, l.num_sucursal, s.nom_sucursal, loc.ref_localidad, loc.sector, s.categoria, re.id_regional, l.num_cuenta, l.cod_estado, es.ref_estado, l.fecha_obs,
            o.cod_obs, co.ref_codigo, ref.ref_referencia, com.id_comentario, com.comentario, com.fecha_coment 
 );
+
 -- SELECT * FROM vw_panorama;

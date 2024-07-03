@@ -1,5 +1,4 @@
-# Base de Datos Auditor
-
+# Base de Datos Auditor 
 Este repositorio contiene la estructura y configuración de una base de datos llamada Auditor, diseñada para gestionar registros de observaciones, comentarios y otras actividades relacionadas.
 
 ## Introducción
